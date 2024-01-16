@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Rajdhani&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+
+ 
+
+    <header>
+        <div class="header-main-logo">
+            <a href="product page">
+                <img src="rahwalogga copy.png" alt="rahwa hair logo">
+                
+            </a>
+           
+        </div>
+
+        <div class="ig-icon">
+            <a href="https://www.instagram.com/bookrahwashair?igsh=MWlzcW5iajA2anRx">
+                <img src="iglogo.png" alt="ig-icon">
+            </a>
+        </div>
+    
+        <div class="tiktok-icon">
+            <a href="https://www.tiktok.com/@bookrahwashair?_t=8iteRrJc2b2&_r=1">
+                <img src="tiktoklogo.png" alt="tiktok-icon">
+            </a>
+        </div>
+
+       
+    
+       
+    </header>
+
+    <script src="app.js"></script>
+   
+    <script>
+        function scrollDown() {
+            // You can adjust the behavior of the scroll (smooth or instant) by modifying the options object
+            window.scrollBy({ top: window.innerHeight * 20, left: 0, behavior: 'smooth' });
+        }
+    </script>
+
+    <script>
+        // Your script content here
+
+        window.addEventListener('scroll', function () {
+            var arrow = document.querySelector('.arrow');
+            var scrollPosition = window.scrollY;
+
+            // You can adjust this value to control when the arrow disappears
+            var triggerPosition = 500;
+
+            if (scrollPosition > triggerPosition) {
+                arrow.classList.add('hidden');
+            } else {
+                arrow.classList.remove('hidden');
+            }
+        });
+    </script>
+ <script>
+    function scrollDown() {
+        // You can adjust the behavior of the scroll (smooth or instant) by modifying the options object
+        window.scrollBy({ top: 650, left: 0, behavior: 'smooth' });
+    }
+</script>
+<script>
+    // Wrap your script in a DOMContentLoaded event listener
+    document.addEventListener('DOMContentLoaded', function () {
+        // Define the myslides function
+        function myslides(n) {
+            let i;
+            const slides = document.getElementsByClassName("myslides");
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        let slideIndex = 1;
+
+        function plusslides(n) {
+            myslides(slideIndex += n);
+        }
+
+        // Call plusslides to start the slideshow immediately
+        plusslides(1);
+
+        // Automatic slideshow
+        setInterval(function () {
+            plusslides(1);
+        }, 4000); // 4000 milliseconds (4 seconds)
+    });
+</script>
+
+
+
+
+<div class="desktopimage">
+<img src="landing2.jpeg" alt="desktopimage">
+</div>
+
+    <div class="slideshow-containter">
+        <div class="myslides">
+            <img src="slide1.jpg" alt="slide 1">
+        </div>
+
+        <div class="myslides">
+            <img src="slidead.jpeg" alt="slidead">
+        </div>
+
+        <div class="myslides">
+            <img src="slide4.jpg" alt="slide 4">
+        </div>
+
+        <div class="myslides">
+            <img src="slide5.jpg" alt="slide 5">
+        </div>
+
+        <div class="text-overlay">
+            
+
+            <a href="https://rahwashair.valei.com/?fbclid=PAAaZ5BabTCxvQdxAnf43FxqKkHTHehh1xydjn43yyk9me7srI-VrE_d1hsLQ_aem_Af02yzOj7X9eEIF2MPUOM2THbiiZfuxoFXPO7W6eq-FoC1FVTl211d-0nlA413QutW4">
+                <button class="hairsalonB" type="button">SALON</button>
+
+                <a href="contact.html">
+                    <button class="Contactme" type="button">CONTACT</button>
+                </a>
+            </a>
+        </div>
+    </div>
+
+    <div class="arrow" onclick="scrollDown()">↓</div>
+    <script>
+        function revealContent() {
+            // Toggle the visibility of the content
+            const content = document.querySelector('.content');
+            content.classList.toggle('hidden');
+    
+            // Hide the arrow after clicking
+            const arrow = document.querySelector('.arrow');
+            arrow.style.display = 'none';
+        }
+    </script>
+
+<h4 class="voguesweden">VOGUE SWEDEN</h4>
+
+    <div class="slider">
+        <div class="item">
+            <h1>Slide 1</h1>
+            <img src="vogue1 copy.jpeg">
+        </div>
+        <div class="item">
+            <h1>Slide 2</h1>
+            <img src="vogue2 copy.jpeg">
+        </div>
+        <div class="item">
+            <h1>Slide 3</h1>
+            <img src="vogue3 copy.jpeg">
+        </div>
+        <div class="item">
+            <h1>Slide 4</h1>
+            <img src="vogue4 copy.jpeg">
+        </div>
+        <div class="item">
+            <h1>Slide 5</h1>
+            <img src="vogue5 copy.jpeg">
+        </div>
+        <div class="item">
+            <h1>Slide 6</h1>
+            <img src="vogue6 copy.jpeg">
+        </div>
+        <div class="item">
+            <h1>Slide 7</h1>
+            <img src="vogue7 copy.jpeg">
+        </div>
+        <div class="item">
+            <h1>Slide 8</h1>
+            <img src="vogue8 copy.jpeg">
+        </div>
+        <button id="next1">></button>
+        <button id="prev1"><</button>
+
+    </div>
+
+  
+    <h5 class="FreelanceW">FREELANCE WORK</h5>
+
+    <div class="slider2">
+        <div class="item2">
+            <h1>Slide 1</h1>
+            <img src="freelance1.jpeg">
+        </div>
+        <div class="item2">
+            <h1>Slide 2</h1>
+            <img src="freelance2.jpeg">
+        </div>
+        <div class="item2">
+            <h1>Slide 3</h1>
+            <img src="freelance3.jpeg">
+        </div>
+        <div class="item2">
+            <h1>Slide 4</h1>
+            <img src="freelance4.jpeg">
+        </div>
+        <button id="next2">></button>
+        <button id="prev2"><</button>
+
+    </div>
+    
+    <h6 class="ellew">ELLE SWEDEN</h6>
+    <div class="slider3">
+        <div class="item3">
+            <h1>Slide 1</h1>
+            <img src="elle1.jpg">
+        </div>
+
+        <div class="item3">
+            <h1>Slide 2</h1>
+            <img src="elle2.jpeg">
+        </div>
+
+        <div class="item3">
+            <h1>Slide 3</h1>
+            <img src="elle3.jpg">
+        </div>
+
+        <div class="item3">
+            <h1>Slide 4</h1>
+            <img src="elle4.jpg">
+        </div>
+
+        <div class="item3">
+            <h1>Slide 5</h1>
+            <img src="elle5.jpg">
+        </div>
+
+        <div class="item3">
+            <h1>Slide 6</h1>
+            <img src="elle6.jpg">
+        </div>
+
+        <div class="item3">
+            <h1>Slide 7</h1>
+            <img src="elle7.jpg">
+        </div>
+
+        <div class="item3">
+            <h1>Slide 8</h1>
+            <img src="elle8.jpeg">
+        </div>
+
+        <div class="item3">
+            <h1>Slide 9</h1>
+            <img src="elle9.jpg">
+        </div>
+
+        <div class="item3">
+            <h1>Slide 10</h1>
+            <img src="elle10.jpg">
+        </div>
+
+        <button id="next3">></button>
+        <button id="prev3"><</button>
+
+       
+
+    </div>
+
+
+    <div class="desktopslider">
+        <div class="voguedesktop">
+            <img src="vogue1 copy.jpeg">
+        </div>
+    </div>
+    
+    <div class="desktopslider">
+        <div class="voguedesktop">
+            <img src="vogue2 copy.jpeg">
+        </div>
+    </div>
+    
+    <div class="desktopslider">
+        <div class="voguedesktop">
+            <img src="vogue3 copy.jpeg">
+        </div>
+    </div>
+    
+    <div class="desktopslider">
+        <div class="voguedesktop">
+            <img src="vogue4 copy.jpeg">
+        </div>
+    </div>
+    
+    <div class="desktopslider">
+        <div class="voguedesktop">
+            <img src="vogue5 copy.jpeg">
+        </div>
+    </div>
+    
+    <div class="desktopslider">
+        <div class="voguedesktop">
+            <img src="vogue6 copy.jpeg">
+        </div>
+    </div>
+    
+    <div class="desktopslider">
+        <div class="voguedesktop">
+            <img src="vogue7 copy.jpeg">
+        </div>
+    </div>
+    
+    <div class="desktopslider">
+        <div class="voguedesktop">
+            <img src="vogue8 copy.jpeg">
+        </div>
+    </div>       
+    
+    
+
+    <div class="desktopslider">
+    <div class="elledesktop">
+        <img src="elle1 copy.jpg">
+    </div>
+</div>
+
+<div class="desktopslider">
+    <div class="elledesktop">
+        <img src="elle2 copy.jpeg">
+    </div>
+</div>
+
+<div class="desktopslider">
+    <div class="elledesktop">
+        <img src="elle3 copy.jpg">
+    </div>
+</div>
+
+<div class="desktopslider">
+    <div class="elledesktop">
+        <img src="elle4 copy.jpg">
+    </div>
+</div>
+
+<div class="desktopslider">
+    <div class="elledesktop">
+        <img src="elle5 copy.jpg">
+    </div>
+</div>
+
+<div class="desktopslider">
+    <div class="elledesktop">
+        <img src="elle6 copy.jpg">
+    </div>
+</div>
+
+<div class="desktopslider">
+    <div class="elledesktop">
+        <img src="elle7 copy.jpg">
+    </div>
+</div>
+
+<div class="desktopslider">
+    <div class="elledesktop">
+        <img src="elle8 copy.jpeg">
+    </div>
+</div>
+
+<div class="desktopslider">
+    <div class="elledesktop">
+        <img src="elle9 copy.jpg">
+    </div>
+</div>
+
+<div class="desktopslider">
+    <div class="elledesktop">
+        <img src="elle10 copy.jpg">
+    </div>
+</div>
+
+
+<div class="desktopslider">
+    <div class="freelancedesktop">
+        <img src="freelance1 copy.jpeg">
+    </div>
+</div>
+
+<div class="desktopslider">
+    <div class="freelancedesktop">
+        <img src="freelance2 copy.jpeg">
+    </div>
+</div>
+
+<div class="desktopslider">
+    <div class="freelancedesktop">
+        <img src="freelance3 copy.jpeg">
+    </div>
+</div>
+
+<div class="desktopslider">
+    <div class="freelancedesktop">
+        <img src="freelance4 copy.jpeg">
+    </div>
+</div>
+
+
+</head>
+
+    
+
+<script>
+    function loadShow(items, activeIndex) {
+        items[activeIndex].style.transform = `none`;
+        items[activeIndex].style.zIndex = 1;
+        items[activeIndex].style.filter = 'none';
+        items[activeIndex].style.opacity = 1;
+
+        let stt = 0;
+        for (var i = activeIndex + 1; i < items.length; i++) {
+            stt++;
+            items[i].style.transform = `translateX(${120 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(-1deg)`;
+            items[i].style.zIndex = -stt;
+            items[i].style.filter = 'blur(5px)';
+            items[i].style.opacity = stt > 2 ? 0 : 0.6;
+        }
+        stt = 0;
+        for (var i = (activeIndex - 1); i >= 0; i--) {
+            stt++;
+            items[i].style.transform = `translateX(${-120 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(1deg)`;
+            items[i].style.zIndex = -stt;
+            items[i].style.filter = 'blur(5px)';
+            items[i].style.opacity = stt > 2 ? 0 : 0.6;
+        }
+    }
+
+    let items1 = document.querySelectorAll('.slider .item');
+    let active1 = 3;
+    loadShow(items1, active1);
+
+    let next1 = document.getElementById('next1');
+    let prev1 = document.getElementById('prev1');
+
+    next1.onclick = function () {
+        active1 = active1 + 1 < items1.length ? active1 + 1 : active1;
+        loadShow(items1, active1);
+    }
+    prev1.onclick = function () {
+        active1 = active1 - 1 >= 0 ? active1 - 1 : active1;
+        loadShow(items1, active1);
+    }
+
+    let items2 = document.querySelectorAll('.slider2 .item2');
+    let active2 = 1;
+    loadShow(items2, active2);
+
+    let next2 = document.getElementById('next2');
+    let prev2 = document.getElementById('prev2');
+
+    next2.onclick = function () {
+        active2 = active2 + 1 < items2.length ? active2 + 1 : active2;
+        loadShow(items2, active2);
+    }
+    prev2.onclick = function () {
+        active2 = active2 - 1 >= 0 ? active2 - 1 : active2;
+        loadShow(items2, active2);
+    }
+
+    let items3 = document.querySelectorAll('.slider3 .item3');
+    let active3 = 3;
+    loadShow(items3, active3);
+
+    let next3 = document.getElementById('next3');
+    let prev3 = document.getElementById('prev3');
+
+    next3.onclick = function () {
+        active3 = active3 + 1 < items3.length ? active3 + 1 : active3;
+        loadShow(items3, active3);
+    }
+    prev3.onclick = function () {
+        active3 = active3 - 1 >= 0 ? active3 - 1 : active3;
+        loadShow(items3, active3);
+    }
+</script>
+
+
+
+
+
+
+<footer class="footer">
+
+    <div class="ig-iconcopy">
+        <a href="https://www.instagram.com/bookrahwashair?igsh=MWlzcW5iajA2anRx">
+            <img src="iglogo copy.png" alt="ig-icon">
+        </a>
+    </div>
+
+    <div class="tiktok-iconcopy">
+        <a href="https://www.tiktok.com/@bookrahwashair?_t=8iteRrJc2b2&_r=1">
+            <img src="tiktoklogo copy.png" alt="tiktok-icon">
+        </a>
+    </div>
+
+    <div class="contactinfo">Contact:</div>
+
+    <div class="email-info">rahwabelaye@gmail.com</div>
+
+    <div class="footer-bottom">
+        <p>&copy;rahwashair</p>
+    </div>
+
+</footer>
+
+
+
+<script>
+    // Move the scroll event listener outside of the load event
+    window.addEventListener("scroll", function () {
+        var scrollPosition = window.scrollY;
+        var bodyHeight = document.body.offsetHeight;
+        var windowHeight = window.innerHeight;
+
+        // Check for desktop footer
+        if (scrollPosition + windowHeight >= bodyHeight) {
+            document.querySelector('.footer').classList.add('show-footer');
+        } else {
+            document.querySelector('.footer').classList.remove('show-footer');
+        }
+
+       
+    });
+
+  
+</script>
+
+
+<footer class="footermobile">
+       
+   
+
+    <div class="ig-iconcopymobile">
+        <a href="https://www.instagram.com/bookrahwashair?igsh=MWlzcW5iajA2anRx">
+            <img src="iglogo copy.png" alt="ig-icon">
+        </a>
+        </div>
+        
+        <div class="tiktok-iconcopymobile">
+        <a           href="https://www.tiktok.com/@bookrahwashair?_t=8iteRrJc2b2&_r=1">
+            <img src="tiktoklogo copy.png"           alt="tiktok-icon">
+        </a>
+        </div>
+  
+  <div class="footer-bottom">
+    <p>&copy;rahwashair</p>
+  </div>
+</div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
